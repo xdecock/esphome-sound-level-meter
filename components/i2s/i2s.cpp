@@ -133,7 +133,7 @@ void I2SComponent::setup() {
                                                 (this->pdm_ ? I2S_MODE_PDM : 0)),  // TODO: make it configurable
                              .sample_rate = this->sample_rate_,
                              .bits_per_sample = i2s_bits_per_sample_t(this->bits_per_sample_),
-                             .channel_format = I2S_CHANNEL_FMT_ONLY_RIGHT,  // TODO: make it configurable
+                             .channel_format = I2S_CHANNEL_FMT_ONLY_LEFT,  // TODO: make it configurable
                              .communication_format = I2S_COMM_FORMAT_STAND_I2S,
                              .intr_alloc_flags = ESP_INTR_FLAG_LEVEL1,
                              .dma_buf_count = this->dma_buf_count_,
